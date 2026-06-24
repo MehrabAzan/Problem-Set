@@ -1,10 +1,10 @@
 def navigate_research_station(station_layout, observations):
     dictionary = dict()
-
     for i, point in enumerate(station_layout):
-        dictionary[i] = point
-
-    
+        dictionary[point] = i
+    result = 0
+    for c in observations:
+        result = dictionary[c]
 
 station_layout1 = "pqrstuvwxyzabcdefghijklmno"
 observations1 = "wildlife"
